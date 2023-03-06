@@ -5,6 +5,7 @@
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   box-sizing: border-box;
+  letter-spacing: 5px;
 }
 
 h1 {
@@ -102,3 +103,4 @@ h1 {
   width: var(--dimension);
   height: var(--dimension);
 }
+
