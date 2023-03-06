@@ -1,0 +1,104 @@
+* {
+  font-family: sans-serif;
+  --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --primary-color: #3668fd;
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 64px;
+  width: 100%;
+  text-align: center;
+}
+
+.todo-form input[type="text"] {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding: 0.75rem;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  border-style: dotted;
+  --tw-border-opacity: 1;
+  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+}
+.todo-form input:focus {
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  border-color: var(--primary-color);
+}
+
+.todo-form button {
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--text-white-color);
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  cursor: pointer;
+  color: white;
+  font-weight: bolder;
+  margin-left: 12px;
+}
+
+.todo-form {
+  display: flex;
+  justify-items: center;
+}
+
+.tasks-container {
+  padding: 32px;
+  width: 100%;
+}
+
+.tasks-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.tasks-container li {
+  margin: 12px 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+}
+.tasks-container li.checked span {
+  text-decoration: line-through;
+}
+.tasks-container li span {
+  margin-left: 12px;
+  font-size: 24px;
+}
+
+.tasks-container li:hover {
+  background: whitesmoke;
+}
+
+.tasks-container li input {
+  --dimension: 24px;
+  width: var(--dimension);
+  height: var(--dimension);
+}
